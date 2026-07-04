@@ -14,10 +14,10 @@ Built with Next.js 15 (App Router), TypeScript, and React.
 - ⏳ Loading skeletons for a smooth UX
 - 📱 Mobile-friendly design
 - 🌐 Progressive Web App (PWA) capabilities:
-  - Offline access to hotline data
-  - Installable on mobile devices
-  - Fast loading with service worker caching
-  - Responsive across all device sizes
+ - Offline access to hotline data
+ - Installable on mobile devices
+ - Fast loading with service worker caching
+ - Responsive across all device sizes
 
 ## Data Structure
 
@@ -33,14 +33,14 @@ The application uses two primary JSON files for data management:
 
 ### hotlines.json
 
-- Contains the comprehensive hotline data
+- Contains the full hotline data
 - Each entry includes:
-  - Unique ID
-  - Location information (region, province, city)
-  - Contact details with alternate numbers
-  - Service categorization
-  - Availability information
-  - Active status tracking
+ - Unique ID
+ - Location information (region, province, city)
+ - Contact details with alternate numbers
+ - Service categorization
+ - Availability information
+ - Active status tracking
 
 ### JSON Schema Integration
 
@@ -70,15 +70,15 @@ Add schema to Workspace Settings in `.vscode/settings.json`:
 1. Open **Preferences/Settings** → **Languages & Frameworks** → **Schemas and DTDs** → **JSON Schema Mappings**
 2. Click the **+** button to add a new mapping
 3. For **hotlines.json**:
-   - Name: `Hotlines Schema`
-   - Schema file or URL: Browse to `schemas/hotlines.schema.json`
-   - Schema version: `JSON Schema version 7`
-   - Add file path pattern: `public/data/hotlines.json`
+ - Name: `Hotlines Schema`
+ - Schema file or URL: Browse to `schemas/hotlines.schema.json`
+ - Schema version: `JSON Schema version 7`
+ - Add file path pattern: `public/data/hotlines.json`
 4. Repeat for **metadata.json**:
-   - Name: `Hotlines Metadata Schema`
-   - Schema file or URL: Browse to `schemas/metadata.schema.json`
-   - Schema version: `JSON Schema version 7`
-   - Add file path pattern: `public/data/metadata.json`
+ - Name: `Hotlines Metadata Schema`
+ - Schema file or URL: Browse to `schemas/metadata.schema.json`
+ - Schema version: `JSON Schema version 7`
+ - Add file path pattern: `public/data/metadata.json`
 
 ## Tech Stack
 
@@ -91,12 +91,12 @@ Add schema to Workspace Settings in `.vscode/settings.json`:
 
 ## Offline Functionality
 
-The app implements a robust offline-first approach:
+The app implements a stable offline-first approach:
 
 1. Service Worker caching for:
-   - Core application assets
-   - Hotline and metadata JSON files
-   - Images and static resources
+ - Core application assets
+ - Hotline and metadata JSON files
+ - Images and static resources
 2. Stale-while-revalidate strategy for fresh content
 3. Offline fallback page
 4. Persistent data storage
@@ -138,8 +138,8 @@ Contributions are welcome! The data structure makes it easy to add or update hot
 
 1. Fork the repo
 2. Update the relevant JSON files:
-   - Add new hotlines to `hotlines.json`
-   - Update metadata in `metadata.json` if adding new regions/provinces/cities
+ - Add new hotlines to `hotlines.json`
+ - Update metadata in `metadata.json` if adding new regions/provinces/cities
 3. Create a new branch (feature/awesome-thing)
 4. Commit changes
 5. Open a Pull Request
@@ -147,7 +147,7 @@ Contributions are welcome! The data structure makes it easy to add or update hot
 ## Contributors
 
 <a href="https://github.com/bettergovph/hotlines/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=bettergovph/hotlines" />
+ <img src="https://contrib.rocks/image?repo=bettergovph/hotlines" />
 </a>
 
 ## BetterGov
